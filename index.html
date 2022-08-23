@@ -5,64 +5,8 @@
 <head>
     <title>Soyemilky</title>
     <script src="https://kit.fontawesome.com/8508c2f424.js" crossorigin="anonymous"></script>
-    <style>
-        header
-        {
-            background-color: #FCC2D8;
-            margin: -1px;
-            overflow-x: hidden;
-            position: fixed;
-            top: 0;
-            width: 100%
-        }
-
-        button
-        {
-            margin: 25px auto 0px;
-            vertical-align: top;
-            background-color: transparent;
-            border: none;
-            color: #E86AB5;
-            cursor: pointer;
-        }
-
-        p
-        {
-            font-size: 35px;
-        }
-
-        .button
-        {
-            margin: 25px;
-            padding: 16px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 20px;
-            transition-duration: 0.25s;
-        }
-
-        .main
-        {
-            margin-top: 0px;
-        }
-
-        .page-link
-        {
-            color: #E86AB5; 
-            border: 3px hidden #E86AB5;
-            margin-top: 5px;
-            border-bottom-style: solid;
-            padding: 20px 32px 15px;
-        }
-
-        .page-link:hover
-        {
-            background-color: #E86AB5;
-            color: #FCC2D8;
-        }
-    </style>
-
+    <script src="data.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body style="margin: 0;">
     <header id="header">
@@ -70,82 +14,65 @@
             <tr>
                 <td style="vertical-align: top; width: 100px;">
                     <button style="float: left; margin: 25px; width: 50px; height: 50px;">
-                        <i class="fa fa-home" style="font-size: 25px;"></i>
+                        <i class="fa fa-bars" style="font-size: 25px;"></i>
                     </button>
                 </td>
 
-                <td style="vertical-align: top;"><button style=" display: block;"><img  id="logo" style="height: 200px;" src="soyemilkylogo.png"></button></td>
+                <td style="vertical-align: top; height: 175px;"><button><img  id="logo" src="soyemilkylogo.png"></button></td>
 
                 <td style="vertical-align: top; width: 100px;">
                     <button style="float: right; margin: 25px; width: 50px; height: 50px;">
-                        <i class="fa fa-search" style="font-size: 25px;"></i>
+                        <i class="fa fa-shopping-cart" style="font-size: 25px;"></i>
                     </button>
                 </td>
             </tr>
         </table>
-        <table style="margin: auto; padding: 10px;">
-            <tr>
-                <td><button class = "button page-link">Home</button></td>
-                <td><button class = "button page-link">Shop</button></td>
-                <td><button class = "button page-link">About</button></td>
-                <td><button class = "button page-link">Comissions</button></td>
-            </tr>
-        </table>
+        <br>
+        <div style="text-align: center">
+            <button class = "page-link">Shop</button>
+            <button class = "page-link">Comissions</button>
+            <button class = "page-link">About</button>
+        </div>
     </header>
-    <div class="main" id="main">
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel massa gravida, ultricies nisi nec, tempus mi. Integer posuere leo aliquam, tempor enim eget, facilisis leo. Etiam dapibus lacus eu felis consectetur mollis. Etiam id ultricies quam, ac egestas diam. Quisque viverra dictum velit id finibus. Nulla metus augue, ultricies vel ligula eu, commodo euismod orci. Praesent et lorem nunc. Proin dignissim pellentesque lacus finibus pretium. Fusce quis enim a leo interdum convallis. Duis dignissim quis orci non condimentum. Nulla erat tellus, porta ut lorem at, consequat interdum augue. Donec in nunc ex. Curabitur erat tortor, consectetur a porttitor quis, tempor efficitur dolor. Donec maximus nunc ante, ac mattis leo sollicitudin eu. Praesent quis est id massa ultricies ornare. Quisque erat ex, sagittis eget laoreet sed, posuere vel elit.
-            </p>
-            <p>
-            Duis molestie nibh eget aliquet eleifend. Vestibulum venenatis risus quis commodo tempor. Integer velit quam, finibus ac porttitor id, pellentesque eu arcu. Donec ultricies ligula quam, vitae sagittis sapien consequat id. Vivamus nec bibendum odio, vel lacinia purus. Nulla aliquet faucibus sem. Mauris faucibus consectetur cursus. Nam tincidunt semper facilisis. Fusce mattis hendrerit mauris, id lacinia erat tristique vel. Nulla a neque est. Duis porta vitae eros sit amet congue. Aenean sed diam quam. Integer elementum maximus libero sed sollicitudin. Nulla feugiat nulla vel augue malesuada laoreet. Aliquam dapibus venenatis gravida.
-            </p>
-            <p>
-            Quisque feugiat tristique nibh, et vulputate ipsum tincidunt ac. Mauris laoreet leo placerat, dignissim turpis ac, laoreet nibh. Cras id dictum leo. Nullam lobortis commodo iaculis. Vestibulum gravida ante et erat condimentum luctus eu non risus. Mauris dolor metus, tempus ut luctus at, imperdiet id elit. In faucibus, ex id dictum fermentum, nibh felis dapibus arcu, vulputate pulvinar orci orci vitae ex. Aenean ultrices velit nec tellus maximus, sit amet aliquam tellus porttitor.
-            </p>
-            <p>
-            Nunc vitae elit ac justo aliquam efficitur. Vestibulum sed neque at lacus sollicitudin vulputate vel volutpat nisi. Aenean auctor interdum dolor vel pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam aliquet arcu eu nulla imperdiet, sed consectetur sem auctor. Etiam mattis lobortis scelerisque. Nam elementum lobortis dolor. Donec fringilla lacinia convallis. Cras tincidunt fermentum egestas. Pellentesque quis sapien mattis, faucibus dolor id, venenatis metus. Cras laoreet libero mauris.
-            </p>
-            <p>
-            Maecenas in sagittis odio, quis dignissim eros. Nullam ut blandit dolor. Nunc ut nibh bibendum, ultricies nunc sit amet, fermentum leo. Aenean lectus urna, bibendum at sem vitae, imperdiet porta nunc. Morbi maximus neque aliquet ligula porttitor, quis ornare tellus consectetur. Pellentesque auctor semper ipsum, sit amet bibendum diam lobortis quis. Nunc consectetur in magna sed faucibus. Phasellus sit amet elit erat. Duis vitae enim et felis viverra viverra tempor sit amet orci. Sed finibus vestibulum velit ut mollis. Morbi condimentum nunc et laoreet interdum. Morbi sagittis non nunc at accumsan. Vivamus et gravida leo. Quisque ac ipsum vel purus molestie porttitor ut quis quam. Aliquam vulputate lobortis nulla, eu pulvinar purus placerat nec.
-            </p>
-            <p>
-            In id velit vel quam maximus mattis vitae fermentum sem. In venenatis ligula id quam sagittis gravida. Vestibulum feugiat erat non odio molestie tincidunt. In tincidunt, ipsum et egestas accumsan, felis mi ullamcorper quam, at vulputate ligula turpis ut sem. Proin nec dui interdum, aliquam enim sit amet, molestie sapien. Suspendisse potenti. Vestibulum consectetur diam eget eros cursus, in semper mi volutpat. In quis dolor a quam maximus pellentesque. Sed sed rutrum tortor. Proin ut justo viverra tortor placerat faucibus at efficitur dui.
-            </p>
-            <p>
-            Nullam feugiat sapien in mauris vestibulum hendrerit. Nam tempor mauris ex, facilisis accumsan libero tincidunt id. Maecenas congue interdum convallis. Sed euismod elementum sapien, nec sagittis mi convallis eget. Donec urna turpis, pulvinar ac volutpat non, maximus et ligula. Nunc vitae libero accumsan, condimentum tellus ut, condimentum ante. Suspendisse vitae felis lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Aenean volutpat lorem a dictum venenatis. Vestibulum placerat felis lectus, eu lobortis tellus vehicula et. Praesent sit amet vehicula magna, auctor scelerisque urna.
-            </p>
-            <p>
-            Fusce fringilla mi ut vehicula posuere. Aliquam tempor vitae lectus quis ornare. Proin non mauris a urna commodo iaculis eget in orci. Maecenas id est consequat, fermentum urna nec, maximus diam. Proin tristique, nibh a semper imperdiet, nunc massa laoreet mi, et vestibulum ante nulla a sapien. Nullam ipsum ex, venenatis ac erat sed, dapibus porttitor sapien. Aenean pellentesque dui mollis massa varius, semper aliquet erat mollis. Fusce ultrices mauris nulla, ut pharetra ante tempor id.
-            </p>
-            <p>
-            Morbi eu convallis augue, sit amet fermentum augue. Donec nec metus a massa cursus consequat. Nulla gravida vel tellus in laoreet. Duis nec leo id turpis suscipit feugiat cursus vel lorem. Proin dapibus, nunc nec cursus vulputate, ex justo hendrerit metus, vel tristique felis augue ac dui. Etiam nec ornare ipsum. Vestibulum dictum, massa rutrum tincidunt tempus, odio odio pulvinar elit, et gravida elit neque eu ipsum.
-            </p>
-            <p>
-            Nulla interdum ultrices massa, ut rhoncus libero cursus sed. Integer vitae nulla at dui suscipit consequat in nec libero. Proin eget elementum lectus. Cras viverra velit nec dolor tempor luctus. Suspendisse ac facilisis dui. Maecenas nunc diam, pulvinar ut turpis sed, fringilla sollicitudin nunc. Nunc cursus lacinia egestas. Quisque laoreet orci ut libero venenatis commodo. Donec nec lectus tortor. Curabitur at mauris eget arcu ullamcorper viverra. Integer ullamcorper, lacus in suscipit fringilla, libero dolor ultrices orci, vel euismod metus elit sit amet enim. Morbi porta nunc augue, cursus tristique sem sodales vel.
-            </p>
-    </div>
-    
+    <main id="main">
+        <div id="content">
+            <br>
+            <h2>ヾ(• ▿ •)ノ"</h2>
+            <h2>Featured</h2>
+            <div id="items">
+                <div class ="item-panel">
+                    <div class = "cover">
+                    </div>
+                    <div class = "text">
+                        <div>Generic Product Name</div>
+                        <div>$5</div>
+                    </div>
+                </div>
+            </div>
+            <hr><br>
+
+        </div>
+    </main>
+    <script src = "main.js"></script>
     <script>
         var header = document.getElementById("header");
         var main = document.getElementById("main");
-        var logo = document.getElementById("logo");
-        var logo_height = logo.offsetHeight;
-
-        main.setAttribute("style", "margin-top: "+(header.offsetHeight+100).toString()+"px ;");
-
-        window.onscroll = function() {LogoResize()};
-
-        function LogoResize()
+        
+        var item_grid = document.getElementById("items");
+        var events = document.getElementById("events");
+        
+        for(var i = 0; i < items.length; i++)
         {
-            console.log(logo_height-window.pageYOffset);
-            if(logo_height-window.pageYOffset >= 75)
-            {
-                logo.style.height = (logo_height-window.pageYOffset).toString()+"px";
-            }
-            else
-            {
-                logo.style.height = "75px"
-            }
+            item_grid.appendChild(AddItemPanel(items[i]));
+        }
+
+        OffsetFromHeader();
+        window.onpageshow = function() {OffsetFromHeader()};
+        window.onresize = function() {OffsetFromHeader()};
+
+        function OffsetFromHeader()
+        {
+            main.setAttribute("style", "margin-top: "+(header.offsetHeight).toString()+"px ;");
         }
 
     </script>
