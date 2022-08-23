@@ -40,14 +40,6 @@
             <h2>ヾ(• ▿ •)ノ"</h2>
             <h2>Featured</h2>
             <div id="items">
-                <div class ="item-panel">
-                    <div class = "cover">
-                    </div>
-                    <div class = "text">
-                        <div>Generic Product Name</div>
-                        <div>$5</div>
-                    </div>
-                </div>
             </div>
             <hr><br>
 
@@ -61,7 +53,7 @@
         var item_grid = document.getElementById("items");
         var events = document.getElementById("events");
         
-        for(var i = 0; i < items.length; i++)
+        for(var i = 0; i < Math.min(items.length, 3); i++)
         {
             item_grid.appendChild(AddItemPanel(items[i]));
         }

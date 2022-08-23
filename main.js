@@ -31,7 +31,7 @@ function AddItemPanel(item)
     {
         if(min_cost == 0)
         {
-            temp.innerHTML = "$"+min_cost.toString();
+            temp.innerHTML = "FREE";
         }
         else
         {
